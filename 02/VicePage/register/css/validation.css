@@ -1,0 +1,15 @@
+input.error{ 
+    border: 1px solid red;
+}
+label.error{
+    height: 16px;
+    width: 180px;
+    border: 1px solid #f9a1a5;
+    background: #fde5e7;
+    color: #ff817e;
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+/* label.checked {
+  background:url("./demo/images/checked.gif") no-repeat 0px 0px;
+} */

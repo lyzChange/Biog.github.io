@@ -1,0 +1,38 @@
+Session的机制
+
+session机制采用的是在服务器端保持状态的方案，并且有自己对应的唯一标识session_id，区分不同用户之前的信息
+
+session的工作原理
+
+1>当一个session第一次被启用时，一个唯一的标识被存储于本地的cookie中。
+
+2>首先使用session_start()函数，PHP从session仓库中加载已经存储的session变量。
+
+3>当执行PHP脚本时，通过使用session_register()函数注册session变量。
+
+4>当PHP脚本执行结束时，未被销毁的session变量会被自动保存在本地一定路径下的session库中，这个路径可以通过php.ini文件中的session.save_path指定，下次浏览网页时可以加载使用。
+
+Session项目实战中都有哪些应用
+
+1>记录用户登陆信息，全局使用
+
+2>制作验证码，验证对比操作
+
+3>将session保存到数据库可以实现：a.控制一个帐号只能一个人登录
+
+Session的优缺点
+
+1>session的优点：唯一性、方便调用、不会过多占用资源，是存储在服务器的一组临时数据。一般情况下，我们在做用户登录时，会将用户数据存入session。这样，在任何页面都可以方便调用，而且 每个客户端会产生唯一的session_id，不会混肴。并且在关闭浏览器后，服务器会有session回收机制，自动删除过期session
+
+2>缺点：在客户端是以cookie方式保存的，禁用cookie就没用了。
+
+
+Session的使用
+
+sesstion_start(); // 首先开启session
+
+$_SESSION['user'] = 'username'; // 把username存在里面
+
+echo $_SESSION['user']; // 直接输出 username
+
+session_destroy(); // 销毁session

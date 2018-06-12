@@ -1,0 +1,213 @@
+.container{
+
+    width: 1000px;
+    margin: 0 auto;
+}
+.container .header{
+    height: 94px;
+    line-height: 94px;
+    border-bottom: 2px solid #44a226;
+}
+.container .header a{
+    display: block;
+    float: left;
+    color: #2c2b30;
+    font-size: 19px;
+}
+.container .header .header-left .logo{
+    margin-top:10px;
+}
+.body{
+    position: relative;
+    margin: 20px 0;
+}
+.body .form{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 370px;
+    height: 456px;
+    border: 1px solid rgba(70, 63, 63, 0.1);
+    box-shadow: 1px 0 10px;
+    background: #f6f8f7;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.body .form>form{
+    margin-top: 15px;
+}
+.body .form>form input{
+    height: 26px;
+    width: 318px;
+    box-sizing: border-box;
+    border: 1px solid #c8c8c8;
+    padding: 0 10px;
+    background: #fefefe;
+}
+.body .form>p{
+    font-size: 16px;
+    color: #4d4d4d;
+    margin-bottom: 20px;
+}
+.body .form .forget{
+    font-size: 12px;
+    float: right;
+    margin-top: 5px;
+}
+.body .form .forget>a{
+    color: #4d4d4d;
+}
+.body .form .forget>a:hover{
+    color: #479202;
+    text-decoration: underline;
+}
+.body .form .password>input{
+    margin:5px 0;
+}
+.body .form .check-box{
+    width: 100%;
+    color:#807e7e;
+    text-align: right;
+}
+.body .form .check-box>input{
+    border: 1px solid #c8c8c8;
+    background: #fefefe;
+    height: 16px;
+    width: 16px;
+    font-size: 12px;
+    vertical-align:bottom;
+    margin-top: 10px;
+}
+.body .form .enter{
+    margin: 20px 0 20px;
+}
+.body .form .sign,.body .form .submit{
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    border: none;
+    height: 31px;
+    line-height: 31px;
+    cursor: pointer;
+}
+.body .form .sign{
+    width: 209px;
+    float: left;
+    color: #fff;   
+    background: url(../images/login.png) 0px -5px no-repeat;
+}
+.body .form .submit{
+    width: 79px;
+    float: right;
+    color: #479202;    
+    background: url(../images/login.png) no-repeat -89px -149px;
+}
+.body .form>form>p{
+    position: relative;
+}
+.body .form>form>p .info{
+    display: block;
+    height: 16px;
+    width: 180px;
+    border: 1px solid #f9a1a5;
+    background: #fde5e7;
+    color: #ff817e;
+    font-size: 12px;
+    position: absolute;
+    display: none;  
+}
+.body .form>form>p .info1{
+    top: -18px;
+}
+.body .form>form>p .info2{
+    top: 6px;
+}
+/* 表单内容的link图标问题 */
+.body .form .link{
+    margin-top: 20px;
+    padding-top:10px;
+    border-top: 1px dotted #c8c8c8;
+    font-size: 12px;
+}
+.body .form .link .list>li{
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    padding: 0px 16px 0px 22px;
+    margin: 16px 16px 0px 0px;
+    display: inline;
+    border-right: 1px solid #dcdddd;
+}
+.body .form .link .list>li>i{
+    display: block;
+    height: 20px;
+    width:16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.body .form .link .list>li>a{
+    font-family: "宋体";
+    color: #807e7e;
+}
+.body .form .link .list>li>a:hover{
+    text-decoration: underline;
+    color: #42a320;
+}
+.body .form .link .li-qq>i{
+    background: url("../images/login.png") no-repeat -209px -75px;
+}
+.body .form .link .li-rr>i{
+    background: url("../images/login.png") no-repeat -209px -96px;;
+}
+.body .form .link .li-kx>i{
+    background: url("../images/login.png") no-repeat -209px -117px;
+}
+.body .form .link .li-zfb>i{
+    background: url("../images/login.png") no-repeat -209px -138px;
+}
+.body .form .link .li-xl>i{
+    background: url("../images/login.png") no-repeat -209px -159px;
+}
+.body .form .link .li-bd>i{
+    background: url("../images/login.png") no-repeat -209px -180px;
+}
+.body .form .link .li-jh>i{
+    background: url("../images/login.png") no-repeat -209px -201px;
+}
+.body .form .link .li-zdm>i{
+    background: url("../images/login.png") no-repeat -209px -223px;
+}
+.body .form .link .li-zyrs>i{
+    background: url("../images/login.png") no-repeat -209px -243px;
+}
+
+/* 底部 */
+.footer{
+    width: 100%;
+    background: #eeeeee;
+}
+.footer .content{
+    width: 870px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #48433d;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.footer .content>p{
+    margin-top: 15px;
+}
+.footer .content>p>a>img{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.footer .bottom{
+    height:26px; 
+    width: 100%;
+    background: #42a320;
+    border: 1px solid #638855;
+}

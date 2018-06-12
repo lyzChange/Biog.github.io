@@ -1,0 +1,26 @@
+div,body,p,span,h3,h2,ul,li,input,dt,dd,dl{
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #606060;
+}
+body{
+  color: #606060;
+  font-family: Arial, Tahoma,"宋体";
+  font-size: 12px;
+}
+img{
+  border: 0;
+  display: block;
+}
+a:visited {
+  color: #606060;
+}
+a:link {
+  color: #606060;
+}

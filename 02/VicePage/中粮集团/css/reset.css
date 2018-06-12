@@ -1,0 +1,14 @@
+*{
+	padding:0;
+	margin:0;
+}
+body {
+    color: #606060;
+    font: 12px/150% Arial, Tahoma,"宋体";
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}

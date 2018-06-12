@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/cart.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <ul class="nav">
+        <li class="fr mycount">
+          <div>
+            <a href="#" class="white">我的账户&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          </div>
+          <ul class="detail">
+            <li class="clearfix first">
+              <span class="fl">你还没有登录!</span>
+              <a href="javascript:;" class="fr" style="color: #8CB91E;">登录</a>
+            </li>
+            <li class="clearfix">
+              <a href="javascript:;" class="fl">代付款订单</a>
+              <a href="javascript:;" class="fr">我的消息</a>
+            </li>
+            <li class="clearfix">
+              <a href="javascript:;" class="fl">待签收订单</a>
+              <a href="javascript:;" class="fr">我的订单</a>
+            </li>
+            <li class="clearfix">
+              <a href="javascript:;" class="fl">支付卡账户</a>
+              <a href="javascript:;" class="fr">我的积分</a>
+            </li>
+            <li class="clearfix">
+              <a href="javascript:;" class="fl">优惠券/团购卡</a>
+              <a href="javascript:;" class="fr">我的收藏</a>
+            </li>
+            <li class="clearfix">
+              <a href="javascript:;" class="fl">电子礼品卡</a>
+            </li>
+          </ul>
+        </li>
+        <li class="fr">
+          <a href="javascript:;">|&nbsp;&nbsp;&nbsp;&nbsp;免费注册</a>
+        </li>
+        <li class="fr">
+          <span class="nickname">Hi，欢迎来我买网，</span><a href="javascript:;">请登录</a>
+        </li>
+      </ul>
+    </div>
+    <div class="clearfix middle">
+      <div class="logo fl">
+        <img src="./img/logo.png" alt="">
+      </div>
+      <div class="process fr">
+        <i class="process-img"></i>
+      </div>
+    </div>
+    <!-- 空购物车 -->
+    <div class="empty-cart">
+      <p class="trip-p">您的购物车中没有商品，赶快行动吧!</p>
+      <p class="link-p">
+        去<a href="./index.html" class="red">首页</a>挑选喜爱的商品，或<a href="./login.html" class="green">登录</a>访问收藏的商品。
+      </p>
+    </div>
+    <!-- 有货物的购物车 -->
+    <div class="have-things">
+      <div class="trip-info">
+        <div class="mycart fl">
+          <span class="l-content">我的购物车</span>
+        </div>
+        <div class="delivery-info fl">
+          <span class="delivery fl">送至：</span>
+          <div class="pro-city fl">
+            <div class="region-text">
+              北京海淀区五环内
+            </div>
+            <i class="fa fa-angle-down"></i>
+          </div>
+        </div>
+        <a href="./index.html" class="fr continue">继续购物&gt;</a>
+      </div>
+      <div class="shopping-cart">
+        <div class="order-nav clearfix">
+          <div class="fl">
+            <p class="hover-p">我买网发货单(2)</p>
+          </div>
+          <div class="total-price fr">
+            <span class="selected">已选商品(含预估运费):</span>
+            <span class="price">&yen; 39.90</span>
+            <span class="go-pay">去结算</span>
+          </div>
+        </div>
+        <ul class="order clearfix">
+          <li class="title1">商品</li>
+          <li class="title2">单价</li>
+          <li class="title3">数量</li>
+          <li class="title2">重量</li>
+          <li class="title2">小计</li>
+          <li class="title4">操作</li>
+        </ul>
+        <div class="ordercont-title clearfix">
+          <div class="or-title fl">
+            <input type="checkbox" checked id="all" class="fl">
+            <lable for="all">常温品</lable>
+          </div>
+          <span class="choudan">
+            <a href="javascript:;">凑单</a>
+          </span>
+          <span class="tehui">"特惠品不参与优惠券使用~"</span>
+          <div class="totals fr">
+            重量合计1.118kg &nbsp;金额合计￥19.90
+          </div>
+        </div>
+        <div class="things">
+         <div class="cont1 clearfix">
+           <div class="cont1-goods clearfix">
+
+           </div>
+              <!--<div class="ct1 fl">
+              <div class="clearfix">
+                <input type="checkbox" class="fl" checked>
+                <a href="javascript:;" id="goods-img" class="fl">
+                  <img src="./img/0.jpg">
+                </a>
+                <div class="cont-link fl">
+                  <a href="javascript:;">
+                    <span class="cont-info">【自营】舒克益早益晚立体爽清牙膏套装(120g+120g)</span>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="zeng">
+                <span>[赠品]【中粮出品】舒克益早益晚立体爽清牙膏套装(120g+120g)</span>
+              </div>
+            </div>
+            <div class="danjia fl">￥19.90</div>
+            <div class="counts fl">
+              <div class="sub oper-goods"></div>
+              <div class="num fl">
+                <input value="1">
+              </div>
+              <div class="add oper-goods"></div>
+            </div>
+            <div class="weight fl">1.152</div>
+            <div class="subtotal fl">&yen;39.80</div>
+            <div class="operation fl">
+              <a href="javascript:;" class="collection">收藏</a>
+              <p><a href="javascript:;" class="del">删除</a></p>              
+            </div>
+          </div>--> 
+
+          <!-- <div class="cont1 clearfix">
+            <div class="ct1 fl">
+              <div class="clearfix">
+                <input type="checkbox" class="fl" checked>
+                <a href="javascript:;" class="fl">
+                  <img src="./img/1.jpg">
+                </a>
+                <div class="cont-link fl">
+                  <a href="javascript:;">
+                    <span class="cont-info">【自营】舒克益早益晚立体爽清牙膏套装(120g+120g)</span>
+                  </a>
+                </div>
+              </div> -->
+              <!-- 带有赠品 -->
+              <!-- <div class="zeng">
+                <span>[赠品]【中粮出品】舒克益早益晚立体爽清牙膏套装(120g+120g)</span>
+              </div>
+            </div>
+            <div class="danjia fl">￥19.90</div>
+            <div class="counts fl">
+              <div class="sub oper-goods"></div>
+              <div class="num fl">
+                <input value="1">
+              </div>
+              <div class="add oper-goods"></div>
+            </div>
+            <div class="weight fl">1.152</div>
+            <div class="subtotal fl">&yen;39.80</div>
+            <div class="operation fl">
+              <a href="javascript:;" class="collection">收藏</a>
+              <p><a href="javascript:;" class="del">删除</a></p>
+            </div>
+          </div> -->
+          <!-- cont1 --> 
+           <!--促销 推荐商品  凑单免邮  -->
+           <div class="sales-promotion clearfix">
+            <span class="cu png fl"></span>
+            <ul class="tit clearfix">
+			      	<li class="fl">购买常温商品<i></i></li>
+              <li class="fl">【自有优选】<i></i></li>
+				      <li class="fl">【超值换购】<i></i></li>
+			        <li class="fl cur">【国产食品】<i></i></li>					
+			        <li class="fl cur">凑单免邮<i></i></li>
+            </ul>
+            <div class="cont j-relationFree3 relationFree curtit">
+              <div class="min-tip">凑单免邮</div>
+              <ul class="pro-img clearfix">
+                <li class="fl">
+                  <dl class="clearfix">
+                    <dt class="fl">
+                      <a href="javascript:;" target="_blank" title="【当季新米】中粮初萃 五常稻花香大米225g">
+                        <img src="./img/2.jpg" alt="【当季新米】中粮初萃 五常稻花香大米225g">
+                      </a>
+                    </dt>
+                    <dd class="fl">
+                      <div class="name">
+                        <a href="javascript:;">"【当季新米】中粮初萃 五常稻花香大米225g"</a>
+                      </div>
+                      <div>
+                        <strong>￥4.00</strong>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="btn" index="0" data-id="list-1" data-img="2" data-price="4.00">
+                    <a href="javascript:;">放入购物车</a>
+                  </div>
+                </li>
+                <li class="fl">
+                  <dl class="clearfix">
+                    <dt class="fl">
+                      <a href="javascript:;" target="_blank" title="【自营】中盐无碘天然湖盐200克">
+                        <img src="./img/3.jpg" alt="【自营】中盐无碘天然湖盐200克">
+                      </a>
+                    </dt>
+                    <dd class="fl">
+                      <div class="name">
+                        <a href="javascript:;">"【自营】中盐无碘天然湖盐200克"</a>
+                      </div>
+                      <div>
+                        <strong>￥4.50</strong>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="btn" index="1" data-id="list-2" data-img="3" data-price="4.50">
+                    <a href="javascript:;">放入购物车</a>
+                  </div>
+                </li>
+                <li class="fl">
+                  <dl class="clearfix">
+                    <dt class="fl">
+                      <a href="javascript:;" target="_blank" title="【中粮海外直采】FERRERO ROCHER费列罗牛奶巧克力制品3粒 37.5g（意大利进口 袋）">
+                        <img src="./img/4.jpg" alt="【中粮海外直采】FERRERO ROCHER费列罗牛奶巧克力制品3粒 37.5g（意大利进口 袋）">
+                      </a>
+                    </dt>
+                    <dd class="fl">
+                      <div class="name">
+                        <a href="javascript:;">"【中粮海外直采】FERRERO ROCHER费列罗牛奶巧克力制品3粒 37.5g（意大利进口 袋）"</a>
+                      </div>
+                      <div>
+                        <strong>￥6.50</strong>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="btn" index="2" data-id="list-3" data-img="4" data-price="6.50">
+                    <a href="javascript:;">放入购物车</a>
+                  </div>
+                </li>
+                <li class="fl">
+                  <dl class="clearfix">
+                    <dt class="fl">
+                      <a href="javascript:;" target="_blank" title="【上质新升级】上质-欧诺鲜全脂牛奶200mL（德国原装进口）">
+                        <img src="./img/5.jpg" alt="【上质新升级】上质-欧诺鲜全脂牛奶200mL（德国原装进口）">
+                      </a>
+                    </dt>
+                    <dd class="fl">
+                      <div class="name">
+                        <a href="javascript:;">"【上质新升级】上质-欧诺鲜全脂牛奶200mL（德国原装进口）"</a>
+                      </div>
+                      <div>
+                        <strong>￥3.30</strong>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="btn"  index="3" data-id="list-4" data-img="5" data-price="3.30">
+                    <a href="javascript:;">放入购物车</a>
+                  </div>
+                </li>
+                <li class="fl">
+                  <dl class="clearfix">
+                    <dt class="fl">
+                      <a href="javascript:;" target="_blank" title="【中粮海外直采 常温酸奶】Immergut怡美特风味酸牛奶200ml（德国进口 盒）">
+                        <img src="./img/6.jpg" alt="【中粮海外直采 常温酸奶】Immergut怡美特风味酸牛奶200ml（德国进口 盒）">
+                      </a>
+                    </dt>
+                    <dd class="fl">
+                      <div class="name">
+                        <a href="javascript:;">"【中粮海外直采 常温酸奶】Immergut怡美特风味酸牛奶200ml（德国进口 盒）"</a>
+                      </div>
+                      <div>
+                        <strong>￥6.00</strong>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="btn" index="4" data-id="list-5" data-img="6" data-price="6.00">
+                    <a href="javascript:;">放入购物车</a>
+                  </div>
+                </li>
+                <li class="fl">
+                  <dl class="clearfix">
+                    <dt class="fl">
+                      <a href="javascript:;" target="_blank" title="【自营】金龙鱼高筋系列鸡蛋麦芯挂面150g">
+                        <img src="./img/7.jpg" alt="【自营】金龙鱼高筋系列鸡蛋麦芯挂面150g">
+                      </a>
+                    </dt>
+                    <dd class="fl">
+                      <div class="name">
+                        <a href="javascript:;">"【自营】金龙鱼高筋系列鸡蛋麦芯挂面150g"</a>
+                      </div>
+                      <div>
+                        <strong>￥1.90</strong>
+                      </div>
+                    </dd>>
+                  </dl>
+                  <div class="btn"  index="5" data-id="list-6" data-img="7" data-price="1.90">
+                    <a href="javascript:;">放入购物车</a>
+                  </div>
+                </li>
+                <li class="fl">
+                  <dl class="clearfix">
+                    <dt class="fl">
+                      <a href="javascript:;" target="_blank" title="【上质新升级】上质-欧诺鲜脱脂牛奶200mL（德国原装进口）">
+                        <img src="./img/8.jpg" alt="【上质新升级】上质-欧诺鲜脱脂牛奶200mL（德国原装进口）">
+                      </a>
+                    </dt>
+                    <dd class="fl">
+                      <div class="name">
+                        <a href="javascript:;">"【上质新升级】上质-欧诺鲜脱脂牛奶200mL（德国原装进口）"</a>
+                      </div>
+                      <div>
+                        <strong>￥2.90</strong>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="btn" index="6" data-id="list-7" data-img="8" data-price="2.90">
+                    <a id="free_638300" href="javascript:;">放入购物车</a>
+                  </div>
+                </li>
+                <li class="fl">
+                  <dl class="clearfix">
+                    <dt class="fl">
+                      <a href="javascript:;" target="_blank" title="【中粮出品】悦活塑纤FitBody巴西莓水果饮品">
+                        <img src="./img/9.jpg" alt="【中粮出品】悦活塑纤FitBody巴西莓水果饮品">
+                      </a>
+                    </dt>
+                    <dd class="fl">
+                      <div class="name">
+                        <a href="javascript:;">"【中粮出品】悦活塑纤FitBody巴西莓水果饮品"</a>
+                      </div>
+                      <div>
+                        <strong>￥6.00</strong>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="btn" index="7" data-id="list-8" data-img="9" data-price="6.00">
+                    <a href="javascript:;">放入购物车</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="pro-icon clearfix">
+                <li class="fl cur"></li>
+              </ul>
+            </div>
+          </div><!-- cont1 -->
+        </div><!-- things -->
+        <!-- 全选，总计 -->
+        <div class="order_amount clearfix">
+          <div class="fl">
+            <div class="ordercont_edit clearfix">
+              <div class="ordercont_allcheck fl">
+                <input type="checkbox" id="all_two1" class="checkall" cartids="2" checked="checked">
+                <label for="all_two1">全选</label>
+        
+              </div>
+              <div class="collect fl">
+                <a href="javascript:;">收藏</a>
+              </div>
+              <div class="position fl">
+                <a href="javascript:void(0);" cartids="2" todel="1" class="delete_all">删除</a>
+                <span class="top_img"></span>
+              </div>
+            </div>
+            <div class="ordercont-sign">
+              <span>
+                <a href="javascript:;" target="_blank">先充值再买单更优惠 充值1000元送悦活饮料4瓶 再用充值所赠1000积分兑换东北大米5KG！</a>
+              </span>
+            </div>
+          </div>
+          <!-- 右边 -->
+          <div class="ordam_right">
+        
+            <div class="ordam-item1 clearfix">
+              <span class="oar_title fl">总重量：</span>
+              <span class="oar_weight fl">0.79kg</span>
+              <span class="oar_title fl">预估运费：</span>
+              <span class="oar-money fl">&yen;20.00</span>
+            </div>
+            <div class="ordam-money clearfix">
+              <span class="oar_title fl">商品金额：</span>
+              <span class="oar-money fl">￥51.90</span>
+            </div>
+            <div class="ordam-money ordam-fav clearfix">
+              <span class="oar_title fl">促销优惠：</span>
+              <span class="oar-money fl">－￥0.00</span>
+            </div>
+        
+            <div class="ordam-total clearfix">
+              <span class="num fl">已选
+                <em>3</em> 件</span>
+              <span class="oar-money-total fl">￥51.90</span>
+              <span class="oar_title-total fl">应付金额：</span>
+            </div>
+            <div class="btn">
+              <div class="j-phone">
+                <div class="phone-hover">
+                  <img data-order="100" src="./img/ervma.png" width="120" height="120" alt="" border="0">
+                  <span>移动端专享，每天省一点</span>
+                </div>
+                <span class="phone-hui fl">
+                  <img data-order="100" src="./img/mini-ervma.png" width="75" height="35" alt="" border="0">
+                </span>
+              </div>
+              <a href="javascript:;" class="fl topay topay1">去结算</a>
+            </div>
+          </div>
+          
+        </div>
+        <!-- 全选，总计 -->
+      </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="success-footer w">
+      <a target="_blank" href="javascript:;">
+        <img src="http://static.womai.com/zhongliang/city/common/images/beian.png">
+        <span>京公网安备 11010102000458号</span>
+      </a>
+      <span>|</span> 京ICP备 13003995号
+      <span>|</span> 营业执照（统一社会信用代码）91110000055590239L
+      <span>|</span> 食品经营许可证：JY11105020028185
+      <p class="copyright">Copyright©2009-2018 womai.com.hk 版权所有</p>
+    </div>
+  </div>
+  <script src="./js/jquery-1.12.4.js"></script>
+  <script src="./js/cart.js"></script>
+</body>
+</html>

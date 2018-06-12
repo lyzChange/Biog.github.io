@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="css/validation.css">
+</head>
+<body>
+    <!-- 头部和主体部分 -->
+    <div class="container">
+        <div class="header clearfix">
+            <div class="header-left">
+                <a href="javascript:;" class="logo">
+                    <img src="./images/20180222033333249.png" alt="">
+                </a>
+                <a href="javascript:;">欢迎注册</a>
+            </div>
+            <div class="header-right">
+                <a href="javascript:;">已有我买网账户？</a>
+                <a href="../sign/sign.html" class="sign">请登录</a>
+            </div>
+        </div>
+        <div class="body">
+            <div class="img">
+                <img src="./images/20171020031420155.jpg" alt="">
+            </div>
+            <div class="form">
+                <form action="" id ="commentForm" method="get">
+                    <p>
+                        <span class="info info1"></span>
+                        <input type="text" placeholder="手机号" class="number" name="checkNumber">
+                    </p>
+                    <p>
+                        <span class="info info2"></span>
+                        <input type="text" placeholder="用户名" class="user" name="userName">
+                    </p>
+                    <p>
+                        <input type="password" placeholder="设置密码" name="password" class="password">
+                    </p>
+                    <p>
+                        <span class="info info3"></span>
+                        <input type="password" placeholder="确认密码" name="confirm_password" class="confirm-password">
+                    </p>
+                    <p>
+                        <input type="text" placeholder="手机验证码" class="yzm" name = "yzm">
+                        <button class="send">发送验证码</button>
+                    </p>
+                    <p class="check-container">
+                        <input type="checkbox" class="check" checked>
+                        <span>我已阅读并同意</span> 
+                        <span class="tk">《我买网网上商城协议条款》</span>
+                    </p>
+                    <p class="submit-container">
+                        <input type="submit" class="submit" value="立即注册">
+                    </p>    
+                    <p class="yzm-container">
+                        <a href="javascript:;" class="yqm">我有邀请码></a>
+                    </p>            
+                </form>
+            </div>
+                <!-- <div class="error"></div> -->
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="content">
+            <p>
+                Copyright©2009-2018 womai.com.hk All Rights Reserved 中粮海优（北京）有限公司版权所有
+            </p>
+            <p>
+                中粮海优（北京）有限公司 北京市朝阳区朝阳门南大街8号18F-09室
+            </p>
+            <p>
+                <a href="javascript:;">
+                    <img src="./images/beian.png" alt="">
+                    京公网安备11010102000458
+                </a>
+                京ICP备 13003995号 营业执照（统一社会信用代码）91110000055590239L 食品经营许可证（社会信用代码）05559023-9
+            </p>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <script src="./libs/jquery-1.11.1.js"></script>
+    <script src="./libs/jquery.validate.js"></script>
+    <!-- 中文提示包 -->
+    <script src="./libs/messages_zh.js"></script>
+    <script src="./js/additional-methods.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+</html>
